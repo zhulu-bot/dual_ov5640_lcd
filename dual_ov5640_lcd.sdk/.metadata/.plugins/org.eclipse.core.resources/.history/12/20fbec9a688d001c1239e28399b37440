@@ -1,0 +1,30 @@
+#include "sd.h"
+
+
+static FATFS fatfs;
+//向 SD 卡中写 BMP 图片
+ void write_sd_bmp(u8 *frame)
+ {
+ FIL fil; //文件对象
+ UINT bw; //写文件函数返回已写入的字节数
+ char pic_name[20]; //字符串，用于存储 BMP 文件名
+
+ //打印 BMP 图片信息(宽/高/图片大小),以及 BMP 文件大小
+ xil_printf("width = %d, height = %d, size = %d, file size = %d bytes \n\r",
+ *bmp_width,*bmp_height,*bmp_size,*bf_size);
+
+ //给 BMP 图片的文件名编号
+ sprintf(pic_name,"picture %04u.bmp",pic_cnt);
+ //打开 BMP 文件,如果不存在则创建该文件
+ f_open(&fil,pic_name,FA_CREATE_ALWAYS | FA_WRITE);
+
+ //移动文件读写指针到文件开头
+	f_lseek(&fil, 0);
+	//写入 BMP 文件头
+ f_write(&fil,bmp_head,54,&bw);
+ //写入抓拍的图片
+ f_write(&fil,frame,*bmp_size,&bw);
+ //关闭文件
+ f_close(&fil);
+ xil_printf("write %s done! \n\r",pic_name);
+ }

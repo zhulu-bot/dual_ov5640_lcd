@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;dual_ov5640_lcd/src/sd&apos;" deleteContents="false" description="Delete resource &apos;dual_ov5640_lcd/src/sd&apos;" element1="/dual_ov5640_lcd/src/sd" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1644824996143"/>
+</session>

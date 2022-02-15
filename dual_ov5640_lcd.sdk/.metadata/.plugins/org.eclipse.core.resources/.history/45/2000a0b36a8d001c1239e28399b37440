@@ -1,0 +1,15 @@
+#include "sd.h"
+
+#include "xparameters.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "xil_cache.h"
+#include "xil_printf.h"
+
+//血的教训，定义变量一定在.c文件里
+
+
+
+

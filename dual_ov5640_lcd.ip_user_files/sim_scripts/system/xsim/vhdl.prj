@@ -1,0 +1,12 @@
+vhdl xil_defaultlib  \
+"../../../bd/system/ip/system_axi_vdma_0_0/sim/system_axi_vdma_0_0.vhd" \
+"../../../bd/system/ip/system_v_tc_0_0/sim/system_v_tc_0_0.vhd" \
+"../../../../dual_ov5640_lcd.srcs/sources_1/bd/system/ipshared/ab26/src/axi_dynclk_S00_AXI.vhd" \
+"../../../../dual_ov5640_lcd.srcs/sources_1/bd/system/ipshared/ab26/src/axi_dynclk.vhd" \
+"../../../bd/system/ip/system_axi_dynclk_0_0/sim/system_axi_dynclk_0_0.vhd" \
+"../../../bd/system/ip/system_axi_gpio_0_0/sim/system_axi_gpio_0_0.vhd" \
+"../../../bd/system/ip/system_rst_ps7_0_100M_5/sim/system_rst_ps7_0_100M_5.vhd" \
+"../../../bd/system/ip/system_axi_vdma_1_0/sim/system_axi_vdma_1_0.vhd" \
+"../../../bd/system/ip/system_v_osd_0_0/sim/system_v_osd_0_0.vhd" \
+
+nosort

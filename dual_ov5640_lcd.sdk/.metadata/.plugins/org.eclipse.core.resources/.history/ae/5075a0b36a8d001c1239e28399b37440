@@ -1,0 +1,13 @@
+
+#ifndef SD_H_
+#define SD_H_
+
+#include "ff.h"
+#include "xil_types.h"
+
+
+//将显存图像以 BMP 格式写入 SD 卡
+void write_sd_bmp(u8 *frame);
+
+
+#endif
